@@ -2,7 +2,7 @@ import { createSlice,nanoid } from "@reduxjs/toolkit";
 
 const todoSlice = createSlice({
     name:"todo",
-    initialState:[{id:1,text:"SP"}],
+    initialState:[{id:1,text:"HP"}],
     reducers:{
         addtodo:(state,action)=>{
            state.push({id:nanoid(), text:action.payload})
